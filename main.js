@@ -1,26 +1,26 @@
-// const darkBtn = document.querySelector('.fas');
-// const bodyEl = document.querySelector('body');
+const darkBtn = document.querySelector('.fas');
+const bodyEl = document.querySelector('body');
 
-// const darkMode = () => {
-//     bodyEl.classList.toggle('dark')
-// }
+const darkMode = () => {
+    bodyEl.classList.toggle('dark')
+}
 
-// darkBtn.addEventListener('click', () => {
-//     setDarkMode = localStorage.getItem('dark');
+darkBtn.addEventListener('click', () => {
+    setDarkMode = localStorage.getItem('dark');
 
-//     if(setDarkMode !== "on") {
-//         darkMode();
-//         setDarkMode = localStorage.setItem('dark', 'on');
-//     } else {
-//         darkMode();
-//         setDarkMode = localStorage.setItem('dark', null);
-//     }
-// });
-// let setDarkMode = localStorage.getItem('dark');
+    if(setDarkMode !== "on") {
+        darkMode();
+        setDarkMode = localStorage.setItem('dark', 'on');
+    } else {
+        darkMode();
+        setDarkMode = localStorage.setItem('dark', null);
+    }
+});
+let setDarkMode = localStorage.getItem('dark');
 
-// if(setDarkMode === 'on') {
-//     darkMode();
-// }
+if(setDarkMode === 'on') {
+    darkMode();
+}
 
 
 
