@@ -1,38 +1,32 @@
-const darkBtn = document.querySelector('.fas');
-const bodyEl = document.querySelector('body');
+// const darkBtn = document.querySelector('.fas');
+// const bodyEl = document.querySelector('body');
 
-const darkMode = () => {
-    bodyEl.classList.toggle('dark')
-}
+// const darkMode = () => {
+//     bodyEl.classList.toggle('dark')
+// }
 
-darkBtn.addEventListener('click', () => {
-    // Get the value of the "dark" item from the local storage on every click
-    setDarkMode = localStorage.getItem('dark');
+// darkBtn.addEventListener('click', () => {
+//     setDarkMode = localStorage.getItem('dark');
 
-    if(setDarkMode !== "on") {
-        darkMode();
-        // Set the value of the itwm to "on" when dark mode is on
-        setDarkMode = localStorage.setItem('dark', 'on');
-    } else {
-        darkMode();
-        // Set the value of the item to  "null" when dark mode if off
-        setDarkMode = localStorage.setItem('dark', null);
-    }
-});
+//     if(setDarkMode !== "on") {
+//         darkMode();
+//         setDarkMode = localStorage.setItem('dark', 'on');
+//     } else {
+//         darkMode();
+//         setDarkMode = localStorage.setItem('dark', null);
+//     }
+// });
+// let setDarkMode = localStorage.getItem('dark');
 
-// Get the value of the "dark" item from the local storage
-let setDarkMode = localStorage.getItem('dark');
-
-// Check dark mode is on or off on page reload
-if(setDarkMode === 'on') {
-    darkMode();
-}
+// if(setDarkMode === 'on') {
+//     darkMode();
+// }
 
 
 
-// let url = 'https://newsapi.org/v2/top-headlines?country=us&apiKey=41a9dcc94cd846c8a1e464047cfb0643';
+let url = 'https://newsapi.org/v2/top-headlines?country=us&apiKey=41a9dcc94cd846c8a1e464047cfb0643';
 // let url = 'Requesthttp://api.mediastack.com/v1/news? access_key = 50e968edbbf80164ea52bc6dc0d4c484';
-let url ='https://newsapi.org/v2/everything?q=tesla&from=2022-06-16&sortBy=publishedAt&apiKey=41a9dcc94cd846c8a1e464047cfb0643'
+// let url ='https://newsapi.org/v2/everything?q=tesla&from=2022-06-16&sortBy=publishedAt&apiKey=41a9dcc94cd846c8a1e464047cfb0643'
 
 
 fetch(url)
