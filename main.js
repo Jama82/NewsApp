@@ -30,8 +30,9 @@ if(setDarkMode === 'on') {
 
 
 
-let url = 'https://newsapi.org/v2/top-headlines?country=us&apiKey=41a9dcc94cd846c8a1e464047cfb0643';
-
+// let url = 'https://newsapi.org/v2/top-headlines?country=us&apiKey=41a9dcc94cd846c8a1e464047cfb0643';
+// let url = 'Requesthttp://api.mediastack.com/v1/news? access_key = 50e968edbbf80164ea52bc6dc0d4c484';
+let url ='https://newsapi.org/v2/everything?q=tesla&from=2022-06-16&sortBy=publishedAt&apiKey=41a9dcc94cd846c8a1e464047cfb0643'
 
 
 fetch(url)
