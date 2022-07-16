@@ -29,7 +29,8 @@ if(setDarkMode === 'on') {
 }
 
 
-let url = 'https://newsapi.org/v2/top-headlines?country=us&apiKey=a92fd65580354b0d8cee1ae550fcefc4';
+
+let url = 'https://newsapi.org/v2/top-headlines?country=us&apiKey=41a9dcc94cd846c8a1e464047cfb0643';
 
 
 

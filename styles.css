@@ -80,6 +80,8 @@ body {
 .date {
 	text-align: left;
 	color: var(--heading-color);
+	padding: 10px;
+	margin: 10px;
 }
 
 h1 {
